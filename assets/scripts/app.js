@@ -11,11 +11,16 @@
  //  const addMovieButton = cancelAddMovieButton.nextElementSibling; or
  const userInputs = addMovieModal.querySelectorAll('input');
  //  const inpitElements = addMovieModal.getElementsByTagName('input');
+ const entryTextSection = document.getElementById('entry-text');
 
  const movies = [];
 
- const updateUI = () {
-
+ const updateUI = () => {
+     if (movies.length === 0) {
+         entryTextSection.style.display = 'block';
+     } else {
+         entryTextSection.style.display = 'none';
+     }
  }
 
  const toggleBackdrop = () => {
