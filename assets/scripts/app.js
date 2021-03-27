@@ -14,6 +14,10 @@
 
  const movies = [];
 
+ const updateUI = () {
+
+ }
+
  const toggleBackdrop = () => {
      backdrop.classList.toggle('visible');
  }
